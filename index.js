@@ -9,7 +9,7 @@ const pool = new Pool({
 const app = express()
 
 app.use(cors({
-    origin: 'https://sequenciarapida.vercel.app',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }))
