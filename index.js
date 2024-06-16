@@ -1,5 +1,6 @@
 const express = require("express")
 const {Pool} = require('pg')
+const cors = require('cors')
 
 const pool = new Pool({
     connectionString: `postgres://wbzqenwz:WnjHQkvBFgBVbsHOS8yEF_tEYx_-RRrs@silly.db.elephantsql.com/wbzqenwz`
