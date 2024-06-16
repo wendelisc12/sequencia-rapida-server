@@ -8,11 +8,7 @@ const pool = new Pool({
 
 const app = express()
 
-app.use(cors({
-    origin: '*',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}))
+app.use(cors({ origin: '*'}));
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
